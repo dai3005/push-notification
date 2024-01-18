@@ -33,7 +33,6 @@ async function run() {
             url: $("input[name='url']" ).val(),
             send_time: parseInt($("input[name='send_time']" ).val()),
             send_type: parseInt($("input[name='send_type']" ).val()),
-            subscription: '123',
           }
           let rq = await fetch(`${urlBase}/api/v1/send_notification`, {
             method: 'post',
