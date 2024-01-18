@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push Noti</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <h1>Đăng kí nhận thông báo</h1>
+      <input
+        type="text"
+        name="identify"
+        label="identify"
+        placeholder="identify"
+      />
+      <button id="subscribe">Subscribe</button>
+    </div>
+    <div
+      style="
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        margin-top: 10px;
+      "
+    ></div>
+    <h1>Gửi thông báo</h1>
+    <div style="display: flex; flex-direction: column; gap: 5px; width: 50%">
+      <input type="text" name="content" label="Content" placeholder="content" />
+      <input type="text" name="icon" label="Icon" placeholder="Icon" />
+      <input type="text" name="image" label="Image" placeholder="Image" />
+      <input type="text" name="title" label="Title" placeholder="Title" />
+      <input type="text" name="url" label="Url" placeholder="Url" />
+      <input
+        type="number"
+        name="send_time"
+        label="Send Time"
+        placeholder="Send Time"
+      />
+      <input
+        type="number"
+        name="send_type"
+        label="Send Type"
+        placeholder="Send Type"
+      />
+    </div>
+    <button style="margin-top: 5px" id="btn-show-notification">
+      Notify Me!
+    </button>
+  </body>
+</html>
