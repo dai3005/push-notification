@@ -25,7 +25,7 @@ async function run() {
     if (areNotificationsGranted) {
       buttonSend.addEventListener("click", async () => {
         let model = {
-            content: $("input[name='content']" ).val(),
+            content: $("input[name='body']" ).val(),
             icon: $("input[name='icon']" ).val(),
             identify:[$("input[name='identify']" ).val()],
             image: $("input[name='image']" ).val(),
