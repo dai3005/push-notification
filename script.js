@@ -71,6 +71,7 @@ async function run() {
             body: JSON.stringify(model)
           })
           let rs = await rq.json();
+          window.location.reload();
         }
       });
     }
