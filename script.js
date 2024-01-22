@@ -15,7 +15,8 @@ async function run() {
     if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
     return M.join(' ');
 })();
-    
+    let agent =  navigator.sayswho
+    document.getElementById("browser").innerHTML = "User-agent:<br>" + agent;
     const urlBase = 'https://portal-sdl-dev.vivas.vn/hieupm';
     let publicKey = 'BEEpnOVYoaVikBR02ra8N7Q_nuVr6TDoilD12ze-TjuMQxzZgHYS76vxVhn7Peba4vTncocKqBegYdlewqCjCto';
     // A service worker must be registered in order to send notifications on iOS
